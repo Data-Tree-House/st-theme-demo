@@ -1,6 +1,7 @@
 [client]
 toolbarMode = "minimal"
 showErrorDetails = false
+layout = "wide"
 
 [server]
 enableStaticServing = true

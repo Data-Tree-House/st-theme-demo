@@ -1,13 +1,19 @@
 [client]
-toolbarMode = "minimal"
+toolbarMode = "viewer"
 showErrorDetails = false
-layout = "wide"
 
 [server]
 enableStaticServing = true
 port = 8501
 address = "0.0.0.0"
+baseUrlPath = ""
 headless = true
+runOnSave = true
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 200
+maxMessageSize = 200
+
 
 [[theme.fontFaces]]
 family = "Poppins"

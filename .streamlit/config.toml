@@ -116,29 +116,29 @@ url = "app/static/Poppins-BlackItalic.ttf"
 style = "italic"
 weight = "900"
 
+[browser]
+gatherUsageStats = false
+
+
 [theme]
 base = "dark"
 primaryColor = "#F36441"
-backgroundColor = "#203B56"
-secondaryBackgroundColor = "#162D42"
-codeBackgroundColor = "#162D42"
+backgroundColor = "#2a2a2a"
+secondaryBackgroundColor = "#121212"
+codeBackgroundColor = "#121212"
 textColor = "#ffffff"
 linkColor = "#F36441"
-borderColor = "#2E5070"
+borderColor = "#7c7c7c"
 showWidgetBorder = true
 baseRadius = "0.3rem"
 buttonRadius = "full"
 font = "Poppins"
 headingFontWeights = [600, 500, 500, 500, 500, 500]
 headingFontSizes = ["3rem", "2.5rem", "2.25rem", "2rem", "1.5rem"]
-chartCategoricalColors = ["#F36441", "#203B56", "#F8A88E", "#2E5070", "#F5795C"]
+chartCategoricalColors = ["#ffc862", "#2d46b9", "#b49bc8"]
 
 [theme.sidebar]
-backgroundColor = "#162D42"
-secondaryBackgroundColor = "#0F1F2E"
-codeBackgroundColor = "#203B56"
-borderColor = "#2E5070"
-
-
-[browser]
-gatherUsageStats = false
+backgroundColor = "#121212"
+secondaryBackgroundColor = "#000000"
+codeBackgroundColor = "#2a2a2a"
+borderColor = "#696969"

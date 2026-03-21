@@ -15,6 +15,13 @@ if "init" not in st.session_state:
     st.session_state.init = True
 
 
+st.logo(
+    "static/streamlit.png",
+    icon_image="static/datatreehouse.circle.png",
+    size="large",
+    link="https://datatreehouse.org",
+)
+
 pages = [
     st.Page("home.py", title="Home", icon=":material/home:"),
     st.Page("widgets.py", title="Widgets", icon=":material/widgets:"),
@@ -26,6 +33,7 @@ pages = [
     st.Page("chat.py", title="Chat", icon=":material/chat:"),
     st.Page("status.py", title="Status", icon=":material/error:"),
 ]
+
 
 page = st.navigation(pages)
 page.run()
@@ -56,3 +64,4 @@ with st.sidebar.container(height=310):
         )
 
 st.sidebar.caption("This app uses [Poppins](https://fonts.google.com/specimen/Poppins) font.")
+st.sidebar.markdown("[![buy-us-a-coffee](./app/static/buy-us-a-coffee.png)](https://pos.snapscan.io/qr/Ew6rBAsV)")

@@ -2,7 +2,17 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-from cards import charts_card, chat_card, dataframe_card, layouts_card, media_card, status_card, text_card, widgets_card
+from cards import (
+    auth_card,
+    charts_card,
+    chat_card,
+    dataframe_card,
+    layouts_card,
+    media_card,
+    status_card,
+    text_card,
+    widgets_card,
+)
 from utils.umami import load_umami
 
 load_umami()
@@ -32,6 +42,7 @@ pages = [
     st.Page("layouts.py", title="Layouts", icon=":material/dashboard:"),
     st.Page("chat.py", title="Chat", icon=":material/chat:"),
     st.Page("status.py", title="Status", icon=":material/error:"),
+    st.Page("auth.py", title="Auth", icon=":material/lock:"),
 ]
 
 
@@ -55,6 +66,8 @@ with st.sidebar.container(height=310):
         chat_card()
     elif page.title == "Status":
         status_card()
+    elif page.title == "Auth":
+        auth_card()
     else:
         st.page_link("home.py", label="Home", icon=":material/home:")
         st.write("Welcome to the home page!")
